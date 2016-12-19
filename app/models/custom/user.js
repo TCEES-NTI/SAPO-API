@@ -13,8 +13,7 @@ let UserSchema = new Schema({
   username: { type: String, required: true, index: { unique: true } },
   password: { type: String, required: true },
   email: { type: String, required: true },
-  status: { type: String, default: CONSTS.USER_STATUS.PENDING_CONFIRMATION },
-  role: { type: String, default: CONSTS.USER_ROLE.STUDENT }
+  role: { type: String, default: CONSTS.USER_ROLE.ADMIN }
 })
 
 UserSchema.pre('save', function (next) {
