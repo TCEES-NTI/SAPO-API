@@ -8,7 +8,7 @@ const CONSTS = require('../../utils/constants')
 let NotaSchema = new Schema({
   usuarioId: {
     type: Schema.ObjectId,
-    ref: 'Usuario'
+    ref: 'User'
   },
   pontuacaoId: {
     type: Schema.ObjectId,
