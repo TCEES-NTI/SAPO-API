@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "estudos-estrategicos-executor",
+    "name": "estudos-estrategicos",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "8zs8jls20g"
+  }
+}

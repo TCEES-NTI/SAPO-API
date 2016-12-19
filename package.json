@@ -1,0 +1,33 @@
+{
+  "name": "SAPO",
+  "main": "server.js",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TCEES-NTI/SAPO.git"
+  },
+  "scripts": {
+    "start": "node localServer.js",
+    "create-proxy": "./node_modules/.bin/claudia generate-serverless-express-proxy --express-module server",
+    "create-deploy": "./node_modules/.bin/claudia create --handler lambda.handler --deploy-proxy-api --region us-east-1",
+    "update": "./node_modules/.bin/claudia update"
+  },
+  "author": "Chris Sevilleja <scotch.io>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-serverless-express": "^1.2.0",
+    "bluebird": "^3.4.6",
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "jsonwebtoken": "^7.1.9",
+    "lodash": "^4.17.2",
+    "mongoose": "*",
+    "morgan": "~1.0.0",
+    "ramda": "^0.22.1",
+    "require-dir": "^0.3.1",
+    "s-salt-pepper": "^2.1.0"
+  },
+  "devDependencies": {
+    "claudia": "^2.1.2"
+  }
+}
