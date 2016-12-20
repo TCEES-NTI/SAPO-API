@@ -15,6 +15,10 @@ let SubnivelSchema = new Schema({
   },
   descricao: {
     type: String
+  },
+  bkpData: {
+    type: Boolean,
+    default: false
   }
 })
 

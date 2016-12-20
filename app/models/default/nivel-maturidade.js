@@ -15,6 +15,10 @@ let nivelMaturidadeSchema = new Schema({
   },
   nome: {
     type: String
+  },
+  bkpData: {
+    type: Boolean,
+    default: false
   }
 })
 

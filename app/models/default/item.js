@@ -23,6 +23,10 @@ let ItemSchema = new Schema({
   },
   obrigatorio: {
     type: Number
+  },
+  bkpData: {
+    type: Boolean,
+    default: false
   }
 })
 

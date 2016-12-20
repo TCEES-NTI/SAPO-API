@@ -12,6 +12,10 @@ let NormaSchema = new Schema({
   },
   nome: {
     type: String
+  },
+  bkpData: {
+    type: Boolean,
+    default: false
   }
 })
 

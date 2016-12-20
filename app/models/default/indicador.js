@@ -12,6 +12,10 @@ let IndicadorSchema = new Schema({
   },
   objetivos: {
     type: String
+  },
+  bkpData: {
+    type: Boolean,
+    default: false
   }
 })
 

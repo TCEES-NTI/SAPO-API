@@ -31,6 +31,10 @@ let NotaSchema = new Schema({
   dataAvaliacao: {
     type: Date, 
     default: Date.now
+  },
+  bkpData: {
+    type: Boolean,
+    default: false
   }
 })
 

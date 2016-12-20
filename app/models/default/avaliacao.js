@@ -24,6 +24,10 @@ let AvaliacaoSchema = new Schema({
   },
   datafim: {
     type: Date
+  },
+  bkpData: {
+    type: Boolean,
+    default: false
   }
 })
 

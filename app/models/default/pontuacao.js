@@ -16,6 +16,10 @@ let PontuacaoSchema = new Schema({
   nota: {
     type: Number,
     default: 0
+  },
+  bkpData: {
+    type: Boolean,
+    default: false
   }
 })
 

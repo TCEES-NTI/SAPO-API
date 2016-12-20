@@ -13,6 +13,10 @@ let criterioLegalSchema = new Schema({
   descricao: {
     type: String,
     required: true
+  },
+  bkpData: {
+    type: Boolean,
+    default: false
   }
 })
 
