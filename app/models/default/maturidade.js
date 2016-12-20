@@ -9,9 +9,8 @@ let maturidadeSchema = new Schema({
   nome: {
     type: String
   },
-  bkpData: {
-    type: Boolean,
-    default: false
+  idHistorico: {
+    type: Number
   }
 })
 

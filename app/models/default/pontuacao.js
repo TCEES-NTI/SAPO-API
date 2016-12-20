@@ -17,9 +17,8 @@ let PontuacaoSchema = new Schema({
     type: Number,
     default: 0
   },
-  bkpData: {
-    type: Boolean,
-    default: false
+  idHistorico: {
+    type: Number
   }
 })
 

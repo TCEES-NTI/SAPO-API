@@ -3,7 +3,6 @@
 const Models = require('require-dir')('../models/default')
 const mongoose = require('./connection')
 const csvRequire = require('better-require')('csv')
-const _ = require('lodash')
 
 const Data = {
   'avaliacao':  require('../../data/avaliacao.csv'),
@@ -24,8 +23,8 @@ const Data = {
 }
 
 const creationFunctions = {
-  'avaliacao':  null,
-  'criterio-legal': null,
+  'avaliacao':  createAvaliacao,
+  'criterio-legal': createCriterioLegal,
   'entidade': createEntidades,
   'indicador': createIndicadores,
   'item': null,
@@ -46,7 +45,7 @@ function createIndicadores (indicadoresData, Model) {
     var indicador = new Model()
     indicador.nome = indicadorData[1]
     indicador.objetivos = indicadorData[2]
-    indicador.bkpData = true
+    indicador.idHistorico = indicadorData[0]
     return indicador.save()
   })
 }
@@ -61,7 +60,7 @@ function createEntidades (entidadesData, Model) {
     entidade.dbpedia = entidadeData[5]
     entidade.populacao = entidadeData[6]
     entidade.pib = entidadeData[7]
-    entidade.bkpData = true
+    entidade.idHistorico = entidadeData[0]
     return entidade.save()
   })
 }
@@ -70,7 +69,7 @@ function createMaturidades (maturidadesData, Model) {
   return maturidadesData.map((maturidadeData) => {
     var maturidade = new Model()
     maturidade.nome = maturidadeData[1]
-    maturidade.bkpData = true
+    maturidade.idHistorico = maturidadeData[0]
     return maturidade.save()
   })
 }
@@ -80,14 +79,35 @@ function createNormas (normasData, Model) {
     var norma = new Model()
     norma.tipo = normaData[1]
     norma.nome =  normaData[2]
-    norma.bkpData = true
+    norma.idHistorico = normaData[0]
     return norma.save()
+  })
+}
+
+function createAvaliacao (avaliacoesData, Model) {
+  return avaliacoesData.map((avaliacaoData) => {
+    var avaliacao = new Model()
+    avaliacao.nome = avaliacaoData[2]
+    avaliacao.objetivos =  avaliacaoData[3]
+    avaliacao.indicadorHistorico = avaliacaoData[1]
+    avaliacao.idHistorico = avaliacaoData[0]
+    return avaliacao.save()
+  })
+}
+
+function createCriterioLegal (criteriosData, Model) {
+  return criteriosData.map((criterioData) => {
+    var criterio = new Model()
+    criterio.descricao = criterioData[2]
+    criterio.normaHistorico =  criterioData[1]
+    criterio.idHistorico = criterioData[0]
+    return criterio.save()
   })
 }
 
 function populateModel (modelname) {
   let Model = Models[modelname]
-  return Model.remove({ bkpData: true })
+  return Model.remove({ idHistorico: { $exists: true }})
     .then((res) => Promise.all(creationFunctions[modelname](Data[modelname], Model)))
     .catch((err) => {
       console.log(err)
@@ -97,11 +117,11 @@ function populateModel (modelname) {
 module.exports = function () {
   mongoose.connect()
   console.log('Populating database with previous data')
-  const modelNames = ['indicador', 'entidade', 'maturidade', 'norma']
+  const modelNames = ['norma', 'indicador', 'entidade', 'maturidade', 'avaliacao', 'criterio-legal']
   Promise.all( modelNames.map(modelName => populateModel(modelName)) )
     .then((res) => {
       console.log('Database filled')
-      mongoose.disconnect()    
+      mongoose.disconnect()
     })
     .catch(console.log)
 }

@@ -30,9 +30,8 @@ let EntidadeSchema = new Schema({
   pib: {
     type: String
   },
-  bkpData: {
-    type: Boolean,
-    default: false
+  idHistorico: {
+    type: Number
   }
 })
 

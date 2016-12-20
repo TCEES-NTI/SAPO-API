@@ -18,8 +18,7 @@ let ObjetoAvaliacaoSchema = new Schema({
     type: String
   },
   bkpData: {
-    type: Boolean,
-    default: false
+    type: Number
   }
 })
 

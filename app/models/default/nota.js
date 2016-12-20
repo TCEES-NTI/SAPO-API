@@ -32,9 +32,8 @@ let NotaSchema = new Schema({
     type: Date, 
     default: Date.now
   },
-  bkpData: {
-    type: Boolean,
-    default: false
+  idHistorico: {
+    type: Number
   }
 })
 

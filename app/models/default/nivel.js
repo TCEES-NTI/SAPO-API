@@ -17,9 +17,8 @@ let NivelSchema = new Schema({
   descricao: {
     type: String
   },
-  bkpData: {
-    type: Boolean,
-    default: false
+  idHistorico: {
+    type: Number
   }
 })
 
