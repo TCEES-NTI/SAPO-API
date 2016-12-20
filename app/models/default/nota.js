@@ -31,6 +31,9 @@ let NotaSchema = new Schema({
   dataAvaliacao: {
     type: Date, 
     default: Date.now
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

@@ -15,6 +15,9 @@ let PilarSchema = new Schema({
   },
   descricao: {
     type: String
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

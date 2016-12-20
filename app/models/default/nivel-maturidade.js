@@ -15,6 +15,9 @@ let nivelMaturidadeSchema = new Schema({
   },
   nome: {
     type: String
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

@@ -23,6 +23,9 @@ let ItemSchema = new Schema({
   },
   obrigatorio: {
     type: Number
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

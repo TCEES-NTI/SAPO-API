@@ -16,6 +16,9 @@ let PontuacaoSchema = new Schema({
   nota: {
     type: Number,
     default: 0
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

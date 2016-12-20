@@ -1,0 +1,124 @@
+"92","34","Obras",NULL
+"1","1","Informações Gerais",
+"2","1","Informações Individuais dos Órgãos",
+"3","1","Obras",
+"4","2","Apresentação dos Dados",
+"5","3","Empenhos",
+"6","3","Liquidação",
+"7","3","Pagamento",
+"8","4","Apresentação dos Dados",
+"9","4","Variação dos Dados no Tempo",
+"10","4","Busca dos Dados",
+"11","5","Receita Lançada",
+"12","5","Receita Realizada",
+"13","6","Apresentação dos Dados",
+"14","6","Variação dos Dados no Tempo",
+"15","6","Busca dos Dados",
+"16","7","Estrutura de Pessoal",
+"17","7","Relação de Servidores",
+"18","7","Folha de Pagamento",
+"19","7","Concursos Públicos",
+"20","8","Apresentação dos Dados",
+"21","8","Variação dos Dados no Tempo",
+"22","8","Busca dos Dados",
+"23","9","Licitações em Andamento",
+"24","9","Licitações Concluídas",
+"25","9","Bens e Produtos Adquiridos",
+"26","9","Contratos Administrativos",
+"27","10","Apresentação dos Dados",
+"28","10","Busca dos Dados",
+"29","10","Variação dos Dados no Tempo",
+"30","11","Legislação Orçamentária",
+"31","11","Relatórios da LRF",
+"32","11","Prestação de Contas",
+"33","11","Auditorias e Inspeções",
+"34","12","Variação dos Dados no Tempo",
+"35","12","Busca dos Dados",
+"36","13","Transferências Cedidas",
+"37","13","Transferências Recebidas",
+"38","14","Bens Imóveis",
+"39","14","Frota",
+"40","14","Outros Bens Móveis",
+"41","15","Informações Gerais",
+"42","16","Apresentação dos Dados",
+"43","17","Empenhos",
+"44","17","Liquidação",
+"45","17","Pagamento",
+"46","18","Apresentação dos Dados",
+"47","18","Variação dos Dados no Tempo",
+"48","18","Busca dos Dados",
+"49","19","Receita Lançada",
+"50","19","Receita Realizada",
+"51","20","Apresentação dos Dados",
+"52","20","Variação dos Dados no Tempo",
+"53","20","Busca dos Dados",
+"54","21","Estrutura de Pessoal",
+"55","21","Relação de Servidores",
+"56","21","Folha de Pagamento",
+"57","21","Concursos Públicos",
+"58","22","Apresentação dos Dados",
+"59","22","Variação dos Dados no Tempo",
+"60","22","Busca dos Dados",
+"61","23","Licitações em Andamento",
+"62","23","Licitações Concluídas",
+"63","23","Bens e Produtos Adquiridos",
+"64","23","Contratos Administrativos",
+"65","24","Apresentação dos Dados",
+"66","24","Busca dos Dados",
+"67","24","Variação dos Dados no Tempo",
+"68","25","Relatórios da LRF",
+"69","25","Prestação de Contas",
+"70","25","Auditorias e Inspeções",
+"71","26","Variação dos Dados no Tempo",
+"72","26","Busca dos Dados",
+"73","27","Bens Imóveis",
+"74","27","Frota",
+"75","27","Outros Bens Móveis",
+"76","28","Leis Aprovadas",
+"77","28","Proposições de Leis",
+"78","29","Busca dos Dados",
+"79","29","Variação dos Dados no Tempo",
+"80","21","Parlamentares",
+"81","30","Verba indenizatória/Gabinete",
+"82","31","Variação dos Dados no Tempo",
+"83","32","Comissões",
+"84","32","Sessões Plenárias",
+"85","32","Votações",
+"86","32","Presença",
+"87","33","Variação dos Dados no Tempo",
+"90","34","Informações Gerais",NULL
+"91","34","Informações Individuais dos Órgãos",NULL
+"93","35","Empenhos",NULL
+"94","35","Liquidação",NULL
+"95","35","Pagamento",NULL
+"96","36","Receita Lançada",NULL
+"97","36","Receita Realizada",NULL
+"98","37","Estrutura de Pessoal",NULL
+"99","37","Relação de Servidores",NULL
+"100","37","Folha de Pagamento",NULL
+"101","37","Concursos Públicos",NULL
+"102","38","Licitações em Andamento",NULL
+"103","38","Licitações Concluídas",NULL
+"104","38","Bens e Produtos Adquiridos",NULL
+"105","38","Contratos Administrativos",NULL
+"106","39","Legislação Orçamentária",NULL
+"107","39","Relatórios da LRF",NULL
+"108","39","Prestação de Contas",NULL
+"109","39","Auditorias e Inspeções",NULL
+"110","40","Transferências Cedidas",NULL
+"111","40","Transferências Recebidas",NULL
+"112","41","Bens Imóveis",NULL
+"113","41","Frota",NULL
+"114","41","Outros Bens Móveis",NULL
+"115","42","Aspectos Gerais",NULL
+"116","42","Apresentação dos Dados",NULL
+"117","42","Variação dos Dados no Tempo",NULL
+"118","42","Busca dos Dados",NULL
+"119","43","Facilidades Acessíveis",NULL
+"120","43","Validação Automática",NULL
+"121","44","Operabilidade",NULL
+"122","44","Proteção Contra Erros",NULL
+"123","44","Aprensibilidade",NULL
+"124","44","Controle e Liberdade do Usuário",NULL
+"125","45","Diferentes Navegadores",NULL
+"126","45","Dispositivos Móveis",NULL

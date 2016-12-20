@@ -29,6 +29,9 @@ let EntidadeSchema = new Schema({
   },
   pib: {
     type: String
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

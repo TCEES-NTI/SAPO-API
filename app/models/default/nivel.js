@@ -16,6 +16,9 @@ let NivelSchema = new Schema({
   },
   descricao: {
     type: String
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

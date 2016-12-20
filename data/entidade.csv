@@ -1,0 +1,198 @@
+"1","Afonso Cláudio","Legislativo","Municipal","3200102","Afonso_Cláudio","31091","291268"
+"2","Água Doce do Norte","Legislativo","Municipal","3200169","Água_Doce_do_Norte","11771","109081"
+"3","Águia Branca","Legislativo","Municipal","3200136","Águia_Branca","9519","142002"
+"4","Alegre","Legislativo","Municipal","3200201","Alegre","30768","290348"
+"5","Alfredo Chaves","Legislativo","Municipal","3200300","Alfredo_Chaves_(Espírito_Santo)","13955","182291"
+"6","Alto Rio Novo","Legislativo","Municipal","3200359","Alto_Rio_Novo","7317","68668"
+"7","Anchieta","Legislativo","Municipal","3200409","Anchieta_(Espírito_Santo)","23902","5106130"
+"8","Apiacá","Legislativo","Municipal","3200508","Apiacá","7512","66705"
+"9","Aracruz","Legislativo","Municipal","3200607","Aracruz","81832","3712520"
+"10","Atilio Vivacqua","Legislativo","Municipal","3200706","Atílio_Vivácqua_(Espírito_Santo)","9850","157549"
+"11","Baixo Guandu","Legislativo","Municipal","3200805","Baixo_Guandu","29081","355767"
+"12","Barra de São Francisco","Legislativo","Municipal","3200904","Barra_de_São_Francisco","40649","562331"
+"13","Boa Esperança","Legislativo","Municipal","3201001","Boa_Esperança_(Espírito_Santo)","14199","197198"
+"14","Bom Jesus do Norte","Legislativo","Municipal","3201100","Bom_Jesus_do_Norte","9476","89528"
+"15","Brejetuba","Legislativo","Municipal","3201159","Brejetuba","11915","189198"
+"16","Cachoeiro de Itapemirim","Legislativo","Municipal","3201209","Cachoeiro_de_Itapemirim","189889","3282890"
+"17","Cariacica","Legislativo","Municipal","3201308","Cariacica","348738","6771110"
+"18","Castelo","Legislativo","Municipal","3201407","Castelo_(Espírito_Santo)","34747","481074"
+"19","Colatina","Legislativo","Municipal","3201506","Colatina","111788","2306900"
+"20","Conceição da Barra","Legislativo","Municipal","3201605","Conceição_da_Barra","28449","430746"
+"21","Conceição do Castelo","Legislativo","Municipal","3201704","Conceição_do_Castelo","11681","137651"
+"22","Divino de São Lourenço","Legislativo","Municipal","3201803","Divino_de_São_Lourenço","4516","47769"
+"23","Domingos Martins","Legislativo","Municipal","3201902","Domingos_Martins_(Espírito_Santo)","31847","445395"
+"24","Dores do Rio Preto","Legislativo","Municipal","3202009","Dores_do_Rio_Preto","6397","78715"
+"25","Ecoporanga","Legislativo","Municipal","3202108","Ecoporanga","23212","332787"
+"26","Fundão","Legislativo","Municipal","3202207","Fundão_(Espírito_Santo)","17025","336214"
+"27","Governador Lindenberg","Legislativo","Municipal","3202256","Governador_Lindenberg","10869","161839"
+"28","Guaçuí","Legislativo","Municipal","3202306","Guaçuí","27851","418910"
+"29","Guarapari","Legislativo","Municipal","3202405","Guarapari","105286","1228590"
+"30","Ibatiba","Legislativo","Municipal","3202454","Ibatiba","22366","249784"
+"31","Ibiraçu","Legislativo","Municipal","3202504","Ibiraçu","11178","178175"
+"32","Ibitirama","Legislativo","Municipal","3202553","Ibitirama","8957","102043"
+"33","Iconha","Legislativo","Municipal","3202603","Iconha","12523","196988"
+"34","Irupi","Legislativo","Municipal","3202652","Irupi","11723","194650"
+"35","Itaguaçu","Legislativo","Municipal","3202702","Itaguaçu","14134","229326"
+"36","Itapemirim","Legislativo","Municipal","3202801","Itapemirim","30988","4109910"
+"37","Itarana","Legislativo","Municipal","3202900","Itarana","10881","115769"
+"38","Iúna","Legislativo","Municipal","3203007","Iúna","27328","334950"
+"39","Jaguaré","Legislativo","Municipal","3203056","Jaguaré","24678","628843"
+"40","Jerônimo Monteiro","Legislativo","Municipal","3203106","Jerônimo_Monteiro","10879","105133"
+"41","João Neiva","Legislativo","Municipal","3203130","João_Neiva","15809","246183"
+"42","Laranja da Terra","Legislativo","Municipal","3203163","Laranja_da_Terra","10826","96412"
+"43","Linhares","Legislativo","Municipal","3203205","Linhares_(Espírito_Santo)","141306","4092260"
+"44","Mantenópolis","Legislativo","Municipal","3203304","Mantenópolis","13612","108981"
+"45","Marataízes","Legislativo","Municipal","3203320","Marataízes","34140","1962590"
+"46","Marechal Floriano","Legislativo","Municipal","3203346","Marechal_Floriano","14262","235755"
+"47","Marilândia","Legislativo","Municipal","3203353","Marilândia","11107","276628"
+"48","Mimoso do Sul","Legislativo","Municipal","3203403","Mimoso_do_Sul","25902","331377"
+"49","Montanha","Legislativo","Municipal","3203502","Montanha_(Espírito_Santo)","17849","275949"
+"50","Mucurici","Legislativo","Municipal","3203601","Mucurici","5655","70893"
+"51","Muniz Freire","Legislativo","Municipal","3203700","Muniz_Freire","18397","198284"
+"52","Muqui","Legislativo","Municipal","3203809","Muqui","14396","138640"
+"53","Nova Venécia","Legislativo","Municipal","3203908","Nova_Venécia","46031","683551"
+"54","Pancas","Legislativo","Municipal","3204005","Pancas","21548","181830"
+"55","Pedro Canário","Legislativo","Municipal","3204054","Pedro_Canário","23794","215329"
+"56","Pinheiros","Legislativo","Municipal","3204104","Pinheiros_(Espírito_Santo)","23895","419292"
+"57","Piúma","Legislativo","Municipal","3204203","Piúma","18123","341892"
+"58","Ponto Belo","Legislativo","Municipal","3204252","Ponto_Belo","6979","60711"
+"59","Presidente Kennedy","Legislativo","Municipal","3204302","Presidente_Kennedy_(Espírito_Santo)","10314","5339310"
+"60","Rio Bananal","Legislativo","Municipal","3204351","Rio_Bananal","17530","259412"
+"61","Rio Novo do Sul","Legislativo","Municipal","3204401","Rio_Novo_do_Sul","11325","125643"
+"62","Santa Leopoldina","Legislativo","Municipal","3204500","Santa_Leopoldina","12240","135583"
+"63","Santa Maria de Jetibá","Legislativo","Municipal","3204559","Santa_Maria_de_Jetibá","34176","852500"
+"64","Santa Teresa","Legislativo","Municipal","3204609","Santa_Teresa_(Espírito_Santo)","21823","285984"
+"65","São Domingos do Norte","Legislativo","Municipal","3204658","São_Domingos_do_Norte","8001","127381"
+"66","São Gabriel da Palha","Legislativo","Municipal","3204708","São_Gabriel_da_Palha","31859","411942"
+"67","São José do Calçado","Legislativo","Municipal","3204807","São_José_do_Calçado","10408","97512"
+"68","São Mateus","Legislativo","Municipal","3204906","São_Mateus_(Espírito_Santo)","109028","1474480"
+"69","São Roque do Canaã","Legislativo","Municipal","3204955","São_Roque_do_Canaã","11273","144031"
+"70","Serra","Legislativo","Municipal","3205002","Serra_(Espírito_Santo)","409267","14850900"
+"71","Sooretama","Legislativo","Municipal","3205010","Sooretama","23843","424481"
+"72","Vargem Alta","Legislativo","Municipal","3205036","Vargem_Alta","19130","239251"
+"73","Venda Nova do Imigrante","Legislativo","Municipal","3205069","Venda_Nova_do_Imigrante","20447","319400"
+"74","Viana","Legislativo","Municipal","3205101","Viana_(Espírito_Santo)","65001","1250330"
+"75","Vila Pavão","Legislativo","Municipal","3205150","Vila_Pavão","8672","157910"
+"76","Vila Valério","Legislativo","Municipal","3205176","Vila_Valério","13830","279129"
+"77","Vila Velha","Legislativo","Municipal","3205200","Vila_Velha","414586","7535330"
+"78","Vitória","Legislativo","Municipal","3205309","Vitória_(Espírito_Santo)","327801","28655000"
+"79","Afonso Cláudio","Executivo","Municipal","3200102","Afonso_Cláudio","31091","291268"
+"80","Água Doce do Norte","Executivo","Municipal","3200169","Água_Doce_do_Norte","11771","109081"
+"81","Águia Branca","Executivo","Municipal","3200136","Águia_Branca","9519","142002"
+"82","Alegre","Executivo","Municipal","3200201","Alegre","30768","290348"
+"83","Alfredo Chaves","Executivo","Municipal","3200300","Alfredo_Chaves_(Espírito_Santo)","13955","182291"
+"84","Alto Rio Novo","Executivo","Municipal","3200359","Alto_Rio_Novo","7317","68668"
+"85","Anchieta","Executivo","Municipal","3200409","Anchieta_(Espírito_Santo)","23902","5106130"
+"86","Apiacá","Executivo","Municipal","3200508","Apiacá","7512","66705"
+"87","Aracruz","Executivo","Municipal","3200607","Aracruz","81832","3712520"
+"88","Atilio Vivacqua","Executivo","Municipal","3200706","Atílio_Vivácqua_(Espírito_Santo)","9850","157549"
+"89","Baixo Guandu","Executivo","Municipal","3200805","Baixo_Guandu","29081","355767"
+"90","Barra de São Francisco","Executivo","Municipal","3200904","Barra_de_São_Francisco","40649","562331"
+"91","Boa Esperança","Executivo","Municipal","3201001","Boa_Esperança_(Espírito_Santo)","14199","197198"
+"92","Bom Jesus do Norte","Executivo","Municipal","3201100","Bom_Jesus_do_Norte","9476","89528"
+"93","Brejetuba","Executivo","Municipal","3201159","Brejetuba","11915","189198"
+"94","Cachoeiro de Itapemirim","Executivo","Municipal","3201209","Cachoeiro_de_Itapemirim","189889","3282890"
+"95","Cariacica","Executivo","Municipal","3201308","Cariacica","348738","6771110"
+"96","Castelo","Executivo","Municipal","3201407","Castelo_(Espírito_Santo)","34747","481074"
+"97","Colatina","Executivo","Municipal","3201506","Colatina","111788","2306900"
+"98","Conceição da Barra","Executivo","Municipal","3201605","Conceição_da_Barra","28449","430746"
+"99","Conceição do Castelo","Executivo","Municipal","3201704","Conceição_do_Castelo","11681","137651"
+"100","Divino de São Lourenço","Executivo","Municipal","3201803","Divino_de_São_Lourenço","4516","47769"
+"101","Domingos Martins","Executivo","Municipal","3201902","Domingos_Martins_(Espírito_Santo)","31847","445395"
+"102","Dores do Rio Preto","Executivo","Municipal","3202009","Dores_do_Rio_Preto","6397","78715"
+"103","Ecoporanga","Executivo","Municipal","3202108","Ecoporanga","23212","332787"
+"104","Fundão","Executivo","Municipal","3202207","Fundão_(Espírito_Santo)","17025","336214"
+"105","Governador Lindenberg","Executivo","Municipal","3202256","Governador_Lindenberg","10869","161839"
+"106","Guaçuí","Executivo","Municipal","3202306","Guaçuí","27851","418910"
+"107","Guarapari","Executivo","Municipal","3202405","Guarapari","105286","1228590"
+"108","Ibatiba","Executivo","Municipal","3202454","Ibatiba","22366","249784"
+"109","Ibiraçu","Executivo","Municipal","3202504","Ibiraçu","11178","178175"
+"110","Ibitirama","Executivo","Municipal","3202553","Ibitirama","8957","102043"
+"111","Iconha","Executivo","Municipal","3202603","Iconha","12523","196988"
+"112","Irupi","Executivo","Municipal","3202652","Irupi","11723","194650"
+"113","Itaguaçu","Executivo","Municipal","3202702","Itaguaçu","14134","229326"
+"114","Itapemirim","Executivo","Municipal","3202801","Itapemirim","30988","4109910"
+"115","Itarana","Executivo","Municipal","3202900","Itarana","10881","115769"
+"116","Iúna","Executivo","Municipal","3203007","Iúna","27328","334950"
+"117","Jaguaré","Executivo","Municipal","3203056","Jaguaré","24678","628843"
+"118","Jerônimo Monteiro","Executivo","Municipal","3203106","Jerônimo_Monteiro","10879","105133"
+"119","João Neiva","Executivo","Municipal","3203130","João_Neiva","15809","246183"
+"120","Laranja da Terra","Executivo","Municipal","3203163","Laranja_da_Terra","10826","96412"
+"121","Linhares","Executivo","Municipal","3203205","Linhares_(Espírito_Santo)","141306","4092260"
+"122","Mantenópolis","Executivo","Municipal","3203304","Mantenópolis","13612","108981"
+"123","Marataízes","Executivo","Municipal","3203320","Marataízes","34140","1962590"
+"124","Marechal Floriano","Executivo","Municipal","3203346","Marechal_Floriano","14262","235755"
+"125","Marilândia","Executivo","Municipal","3203353","Marilândia","11107","276628"
+"126","Mimoso do Sul","Executivo","Municipal","3203403","Mimoso_do_Sul","25902","331377"
+"127","Montanha","Executivo","Municipal","3203502","Montanha_(Espírito_Santo)","17849","275949"
+"128","Mucurici","Executivo","Municipal","3203601","Mucurici","5655","70893"
+"129","Muniz Freire","Executivo","Municipal","3203700","Muniz_Freire","18397","198284"
+"130","Muqui","Executivo","Municipal","3203809","Muqui","14396","138640"
+"131","Nova Venécia","Executivo","Municipal","3203908","Nova_Venécia","46031","683551"
+"132","Pancas","Executivo","Municipal","3204005","Pancas","21548","181830"
+"133","Pedro Canário","Executivo","Municipal","3204054","Pedro_Canário","23794","215329"
+"134","Pinheiros","Executivo","Municipal","3204104","Pinheiros_(Espírito_Santo)","23895","419292"
+"135","Piúma","Executivo","Municipal","3204203","Piúma","18123","341892"
+"136","Ponto Belo","Executivo","Municipal","3204252","Ponto_Belo","6979","60711"
+"137","Presidente Kennedy","Executivo","Municipal","3204302","Presidente_Kennedy_(Espírito_Santo)","10314","5339310"
+"138","Rio Bananal","Executivo","Municipal","3204351","Rio_Bananal","17530","259412"
+"139","Rio Novo do Sul","Executivo","Municipal","3204401","Rio_Novo_do_Sul","11325","125643"
+"140","Santa Leopoldina","Executivo","Municipal","3204500","Santa_Leopoldina","12240","135583"
+"141","Santa Maria de Jetibá","Executivo","Municipal","3204559","Santa_Maria_de_Jetibá","34176","852500"
+"142","Santa Teresa","Executivo","Municipal","3204609","Santa_Teresa_(Espírito_Santo)","21823","285984"
+"143","São Domingos do Norte","Executivo","Municipal","3204658","São_Domingos_do_Norte","8001","127381"
+"144","São Gabriel da Palha","Executivo","Municipal","3204708","São_Gabriel_da_Palha","31859","411942"
+"145","São José do Calçado","Executivo","Municipal","3204807","São_José_do_Calçado","10408","97512"
+"146","São Mateus","Executivo","Municipal","3204906","São_Mateus_(Espírito_Santo)","109028","1474480"
+"147","São Roque do Canaã","Executivo","Municipal","3204955","São_Roque_do_Canaã","11273","144031"
+"148","Serra","Executivo","Municipal","3205002","Serra_(Espírito_Santo)","409267","14850900"
+"149","Sooretama","Executivo","Municipal","3205010","Sooretama","23843","424481"
+"150","Vargem Alta","Executivo","Municipal","3205036","Vargem_Alta","19130","239251"
+"151","Venda Nova do Imigrante","Executivo","Municipal","3205069","Venda_Nova_do_Imigrante","20447","319400"
+"152","Viana","Executivo","Municipal","3205101","Viana_(Espírito_Santo)","65001","1250330"
+"153","Vila Pavão","Executivo","Municipal","3205150","Vila_Pavão","8672","157910"
+"154","Vila Valério","Executivo","Municipal","3205176","Vila_Valério","13830","279129"
+"155","Vila Velha","Executivo","Municipal","3205200","Vila_Velha","414586","7535330"
+"156","Vitória","Executivo","Municipal","3205309","Vitória_(Espírito_Santo)","327801","28655000"
+"157","Tribunal de Contas do ES","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"158","Ministério Público do ES","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"159","Tribunal de Justiça do ES","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"160","Assembleia Legislativa do ES","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"161","Governo do Estado do ES","Executivo","Estadual",NULL,NULL,NULL,NULL
+"162","Defensoria Pública do ES","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"163","Tribunal de Contas do Estado do Acre","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"164","Tribunal de Contas do Estado de Alagoas","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"165","Tribunal de Contas do Estado do Amapá","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"166","Tribunal de Contas do Estado do Amazonas","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"167","Tribunal de Contas do Estado da Bahia","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"168","Tribunal de Contas do Estado do Ceará","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"169","Tribunal de Contas do Estado de Goiás","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"170","Tribunal de Contas do Estado do Maranhão","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"171","Tribunal de Contas do Estado de Mato Grosso","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"172","Tribunal de Contas do Estado de Mato Grosso do Sul","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"173","Tribunal de Contas do Estado de Minas Gerais","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"174","Tribunal de Contas do Estado do Pará","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"175","Tribunal de Contas do Estado da Paraíba","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"176","Tribunal de Contas do Estado do Paraná","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"177","Tribunal de Contas do Estado de Pernambuco","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"178","Tribunal de Contas do Estado do Piauí","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"179","Tribunal de Contas do Estado do Rio de Janeiro","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"180","Tribunal de Contas do Estado do Rio Grande do Norte","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"181","Tribunal de Contas do Estado do Rio Grande do Sul","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"182","Tribunal de Contas do Estado de Rondônia","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"183","Tribunal de Contas do Estado de Roraima","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"184","Tribunal de Contas do Estado de Santa Catarina","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"185","Tribunal de Contas do Estado de São Paulo","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"186","Tribunal de Contas do Estado de Sergipe","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"187","Tribunal de Contas do Estado do Tocantins","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"188","Tribunal de Contas do Distrito Federal","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"189","Tribunal de Contas dos Municípios do Estado da Bahia","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"190","Tribunal de Contas dos Municípios do Estado do Ceará","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"191","Tribunal de Contas dos Municípios do Estado de Goiás","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"192","Tribunal de Contas dos Municípios do Estado do Pará","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"193","Tribunal de Contas do Município de São Paulo","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"194","Tribunal de Contas do Município do Rio de Janeiro","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"195","Tribunal de Contas da União","Legislativo","Estadual",NULL,NULL,NULL,NULL
+"196","Superior Tribunal de Justiça",NULL,NULL,NULL,NULL,NULL,NULL
+"197","Supremo Tribunal Federal",NULL,NULL,NULL,NULL,NULL,NULL
+"198","Tribunal Superior do Trabalho",NULL,NULL,NULL,NULL,NULL,NULL

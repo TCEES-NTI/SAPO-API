@@ -12,6 +12,9 @@ let IndicadorSchema = new Schema({
   },
   objetivos: {
     type: String
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

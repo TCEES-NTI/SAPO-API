@@ -15,6 +15,9 @@ let TipoSchema = new Schema({
   },
   descricao: {
     type: String
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

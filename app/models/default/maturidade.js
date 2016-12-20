@@ -8,6 +8,9 @@ const CONSTS = require('../../utils/constants')
 let maturidadeSchema = new Schema({
   nome: {
     type: String
+  },
+  idHistorico: {
+    type: Number
   }
 })
 

@@ -16,6 +16,9 @@ let ObjetoAvaliacaoSchema = new Schema({
   },
   observacoes: {
     type: String
+  },
+  bkpData: {
+    type: Number
   }
 })
 
