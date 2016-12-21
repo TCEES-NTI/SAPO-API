@@ -171,10 +171,10 @@ module.exports = function () {
       modelNames = ['pontuacao']
       return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
     })
-    .then((res) => {
-      modelNames = ['nota']
-      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
-    })
+    // .then((res) => {
+    //   modelNames = ['nota']
+    //   return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    // })
     .then((res) => {
       console.log('Done populating database')
       mongoose.disconnect()
