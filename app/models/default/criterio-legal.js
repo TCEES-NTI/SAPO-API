@@ -5,7 +5,6 @@ const Schema = mongoose.Schema
 const splitArray = require('../../utils/split-array')
 const CONSTS = require('../../utils/constants')
 const Norma = require('./norma.js')
-console.log(Norma)
 
 let CriterioLegalSchema = new Schema({
   norma: {
@@ -16,8 +15,7 @@ let CriterioLegalSchema = new Schema({
     type: Number
   },
   descricao: {
-    type: String,
-    required: true
+    type: String
   },
   idHistorico: {
     type: Number
@@ -25,16 +23,13 @@ let CriterioLegalSchema = new Schema({
 })
 
 CriterioLegalSchema.pre('validate', function (next) {
-  console.log(this)
-  Norma.find({ idHistorico: 1})
+  Norma.findOne({ idHistorico: this.normaHistorico })
     .then((res) => {
-      console.log('Aqui?', res)
-      // this.norma = res._id
+      this.norma = res._id
       this.normaHistorico = undefined
       return next()
     })
     .catch((err) => {
-      console.log('Tenho erros?', err)
       this.normaHistorico = undefined
       return next()
     })

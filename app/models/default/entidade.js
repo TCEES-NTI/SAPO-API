@@ -11,12 +11,10 @@ let EntidadeSchema = new Schema({
     required: true
   },
   poder: {
-    type: String,
-    required: true
+    type: String
   },
   esfera: {
-    type: String,
-    required: true
+    type: String
   },
   geonames: {
     type: String

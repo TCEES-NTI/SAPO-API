@@ -15,12 +15,10 @@ let AvaliacaoSchema = new Schema({
     type: Number
   },
   nome: {
-    type: String,
-    required: true
+    type: String
   },
   objetivos: {
-    type: String,
-    required: true
+    type: String
   },
   dataInicio: {
     type: Date, 
