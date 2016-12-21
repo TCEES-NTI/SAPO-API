@@ -49,28 +49,68 @@ const creationAttributes = {
     objetivos: 2,
     idHistorico: 0
   },
-  'item': null,
+  'item': {
+    subnivelHistorico: 1,
+    nome: 2,
+    exigencia: 3,
+    notaMaxima: 4,
+    obrigatorio: 5,
+    idHistorico: 0
+  },
   'maturidade': {
     nome: 1,
     idHistorico:0
   },
-  'nivel-maturidade': null,
-  'nivel': null,
+  'nivel-maturidade': {
+    posicao: 2,
+    nome: 3,
+    maturidadeHistorico: 1,
+    idHistorico: 0
+  },
+  'nivel': {
+    nome: 2,
+    descricao: 3,
+    tipoHistorico: 1,
+    idHistorico: 0
+  },
   'norma': {
     tipo: 1,
     nome: 2,
     idHistorico: 0
   },
-  'nota': null,
-  'objeto-avaliacao': null,
+  'nota': {
+    pontuacaoHistorico: 2,
+    itemHistorico: 3,
+    objetoAvaliacaoHistorico: 4,
+    evidencias: 6,
+    observacoes: 7,
+    dataAvaliacao: 5,
+    idHistorico: 0
+  },
+  'objeto-avaliacao': {
+    observacoes: 3,
+    idHistorico: 0,
+    entidadeHistorico: 1,
+    avaliacaoHistorico: 2
+  },
   'pilar': {
     nome: 2,
     descricao: 3,
     indicadorHistorico: 1,
     idHistorico: 0
   },
-  'pontuacao': null,
-  'subnivel': null,
+  'pontuacao': {
+    itemHistorico: 1,
+    idHistorico: 0,
+    descricao: 2,
+    nota: 3
+  },
+  'subnivel': {
+    nome: 2,
+    descricao: 3,
+    nivelHistorico: 1,
+    idHistorico: 0
+  },
   'tipo': {
     nome: 1,
     descricao: 3,
@@ -105,15 +145,38 @@ function populateModel (modelname) {
 module.exports = function () {
   mongoose.connect()
   console.log('Populating database with previous data')
-  // Models without reference
   let modelNames = ['norma', 'indicador', 'entidade', 'maturidade']
   Promise.all( modelNames.map(modelName => populateModel(modelName)) )
     .then((res) => {
-      // Models with references
-      modelNames = ['avaliacao', 'criterio-legal', 'pilar', 'tipo']
+      modelNames = ['avaliacao', 'criterio-legal', 'pilar', 'nivel-maturidade']
       return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
     })
     .then((res) => {
+      modelNames = ['tipo', 'objeto-avaliacao']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['nivel']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['subnivel']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['item']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['pontuacao']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['nota']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      console.log('Done populating database')
       mongoose.disconnect()
     })
     .catch(console.log)
