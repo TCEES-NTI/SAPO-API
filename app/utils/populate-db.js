@@ -22,93 +22,121 @@ const Data = {
   'tipo': require('../../data/tipo.csv')
 }
 
-const creationFunctions = {
-  'avaliacao':  createAvaliacao,
-  'criterio-legal': createCriterioLegal,
-  'entidade': createEntidades,
-  'indicador': createIndicadores,
-  'item': null,
-  'maturidade': createMaturidades,
-  'nivel-maturidade': null,
-  'nivel': null,
-  'norma': createNormas,
-  'nota': null,
-  'objeto-avaliacao': null,
-  'pilar': null,
-  'pontuacao': null,
-  'subnivel': null,
-  'tipo': null
+const creationAttributes = {
+  'avaliacao': {
+    nome: 2,
+    objetivos: 3,
+    indicadorHistorico: 1,
+    idHistorico: 0
+  },
+  'criterio-legal': {
+    descricao: 2,
+    normaHistorico: 1,
+    idHistorico: 0
+  },
+  'entidade': {
+    nome: 1,
+    poder: 2,
+    esfera: 3,
+    geonames: 4,
+    dbpedia: 5,
+    populacao: 6,
+    pib: 7,
+    idHistorico: 0
+  },
+  'indicador': {
+    nome: 1,
+    objetivos: 2,
+    idHistorico: 0
+  },
+  'item': {
+    subnivelHistorico: 1,
+    nome: 2,
+    exigencia: 3,
+    notaMaxima: 4,
+    obrigatorio: 5,
+    idHistorico: 0
+  },
+  'maturidade': {
+    nome: 1,
+    idHistorico:0
+  },
+  'nivel-maturidade': {
+    posicao: 2,
+    nome: 3,
+    maturidadeHistorico: 1,
+    idHistorico: 0
+  },
+  'nivel': {
+    nome: 2,
+    descricao: 3,
+    tipoHistorico: 1,
+    idHistorico: 0
+  },
+  'norma': {
+    tipo: 1,
+    nome: 2,
+    idHistorico: 0
+  },
+  'nota': {
+    pontuacaoHistorico: 2,
+    itemHistorico: 3,
+    objetoAvaliacaoHistorico: 4,
+    evidencias: 6,
+    observacoes: 7,
+    dataAvaliacao: 5,
+    idHistorico: 0
+  },
+  'objeto-avaliacao': {
+    observacoes: 3,
+    idHistorico: 0,
+    entidadeHistorico: 1,
+    avaliacaoHistorico: 2
+  },
+  'pilar': {
+    nome: 2,
+    descricao: 3,
+    indicadorHistorico: 1,
+    idHistorico: 0
+  },
+  'pontuacao': {
+    itemHistorico: 1,
+    idHistorico: 0,
+    descricao: 2,
+    nota: 3
+  },
+  'subnivel': {
+    nome: 2,
+    descricao: 3,
+    nivelHistorico: 1,
+    idHistorico: 0
+  },
+  'tipo': {
+    nome: 1,
+    descricao: 3,
+    pilarHistorico: 2,
+    idHistorico: 0
+  }
 }
 
-function createIndicadores (indicadoresData, Model) {
-  return indicadoresData.map((indicadorData) => {
-    var indicador = new Model()
-    indicador.nome = indicadorData[1]
-    indicador.objetivos = indicadorData[2]
-    indicador.idHistorico = indicadorData[0]
-    return indicador.save()
+function createModel (options, multipleData, Model) {
+  return multipleData.map((singleData) => {
+    return newModelAttributes(options, singleData, Model)
   })
 }
 
-function createEntidades (entidadesData, Model) {
-  return entidadesData.map((entidadeData) => {
-    var entidade = new Model()
-    entidade.nome = entidadeData[1]
-    entidade.poder =  entidadeData[2]
-    entidade.esfera = entidadeData[3]
-    entidade.geonames = entidadeData[4]
-    entidade.dbpedia = entidadeData[5]
-    entidade.populacao = entidadeData[6]
-    entidade.pib = entidadeData[7]
-    entidade.idHistorico = entidadeData[0]
-    return entidade.save()
-  })
-}
-
-function createMaturidades (maturidadesData, Model) {
-  return maturidadesData.map((maturidadeData) => {
-    var maturidade = new Model()
-    maturidade.nome = maturidadeData[1]
-    maturidade.idHistorico = maturidadeData[0]
-    return maturidade.save()
-  })
-}
-
-function createNormas (normasData, Model) {
-  return normasData.map((normaData) => {
-    var norma = new Model()
-    norma.tipo = normaData[1]
-    norma.nome =  normaData[2]
-    norma.idHistorico = normaData[0]
-    return norma.save()
-  })
-}
-
-function createAvaliacao (avaliacoesData, Model) {
-  return avaliacoesData.map((avaliacaoData) => {
-    var avaliacao = new Model()
-    avaliacao.nome = avaliacaoData[2]
-    avaliacao.objetivos =  avaliacaoData[3]
-    avaliacao.indicadorHistorico = avaliacaoData[1]
-    avaliacao.idHistorico = avaliacaoData[0]
-    return avaliacao.save()
-  })
-}
-
-function createCriterioLegal (criteriosData, Model) {
-  return criteriosData.map((criterioData) => {
-    var criterio = new Model()
-    criterio.descricao = criterioData[2]
-    criterio.normaHistorico =  criterioData[1]
-    criterio.idHistorico = criterioData[0]
-    return criterio.save()
-  })
+function newModelAttributes (attributesObj, data, Model) {
+  var model = new Model()
+  return Object.keys(attributesObj).reduce((model, attrKey) => {
+    model[attrKey] = data[attributesObj[attrKey]] && data[attributesObj[attrKey]] !== "NULL" ? data[attributesObj[attrKey]] : undefined
+    return model
+  }, model).save()
 }
 
 function populateModel (modelname) {
   let Model = Models[modelname]
   return Model.remove({ idHistorico: { $exists: true }})
-    .then((res) => Promise.all(creationFunctions[modelname](Data[modelname], Model)))
+    .then((res) => Promise.all(createModel(creationAttributes[modelname], Data[modelname], Model)))
     .catch((err) => {
       console.log(err)
     })
@@ -117,10 +145,38 @@ function populateModel (modelname) {
 module.exports = function () {
   mongoose.connect()
   console.log('Populating database with previous data')
-  const modelNames = ['norma', 'indicador', 'entidade', 'maturidade', 'avaliacao', 'criterio-legal']
+  let modelNames = ['norma', 'indicador', 'entidade', 'maturidade']
   Promise.all( modelNames.map(modelName => populateModel(modelName)) )
     .then((res) => {
-      console.log('Database filled')
+      modelNames = ['avaliacao', 'criterio-legal', 'pilar', 'nivel-maturidade']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['tipo', 'objeto-avaliacao']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['nivel']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['subnivel']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['item']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['pontuacao']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      modelNames = ['nota']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
+    .then((res) => {
+      console.log('Done populating database')
       mongoose.disconnect()
     })
     .catch(console.log)

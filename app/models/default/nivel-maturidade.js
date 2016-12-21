@@ -4,11 +4,15 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const splitArray = require('../../utils/split-array')
 const CONSTS = require('../../utils/constants')
+const Maturidade = require('./maturidade.js')
 
-let nivelMaturidadeSchema = new Schema({
-  maturidadeId: {
+let NivelMaturidadeSchema = new Schema({
+  maturidade: {
     type: Schema.ObjectId,
     ref: 'Maturidade'
+  },
+  maturidadeHistorico: {
+    type: Number
   },
   posicao: {
     type: Number
@@ -21,4 +25,17 @@ let nivelMaturidadeSchema = new Schema({
   }
 })
 
-module.exports = mongoose.model('NivelMaturidade', nivelMaturidadeSchema)
+NivelMaturidadeSchema.pre('validate', function (next) {
+  Maturidade.findOne({ idHistorico: this.maturidadeHistorico })
+    .then((res) => {
+      this.maturidade = res._id
+      this.maturidadeHistorico = undefined
+      return next()
+    })
+    .catch((err) => {
+      this.maturidadeHistorico = undefined
+      return next()
+    })
+})
+
+module.exports = mongoose.model('NivelMaturidade', NivelMaturidadeSchema)
