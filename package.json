@@ -12,7 +12,7 @@
     "create-deploy": "./node_modules/.bin/claudia create --handler lambda.handler --deploy-proxy-api --region us-east-1",
     "update": "./node_modules/.bin/claudia update"
   },
-  "author": "Chris Sevilleja <scotch.io>",
+  "author": "Luciano P. Franca",
   "license": "MIT",
   "dependencies": {
     "aws-serverless-express": "^1.2.0",
