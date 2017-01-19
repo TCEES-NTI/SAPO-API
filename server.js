@@ -26,7 +26,7 @@ app.use(function(req, res, next) {
 
 app.use('/api', require('./app/routes/default'))
 
-populateDB()
+// populateDB()
 
 module.exports = app
 console.log('API Started')
