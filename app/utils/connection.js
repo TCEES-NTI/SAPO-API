@@ -12,7 +12,7 @@ const connect = (cb) => {
   const connectionString = dbConfig.DBURL === 'localhost' ? 
     'mongodb://' + dbConfig.DBURL + '/' + dbConfig.DBNAME :
     'mongodb://' + dbConfig.DBUSER + ':' + dbConfig.DBPASSWORD + '@' + dbConfig.DBURL + '/' + dbConfig.DBNAME
-  mongoose.connect(connectionString, options, cb)
+  return mongoose.connect(connectionString, options, cb)
 }
 
 const disconnect = (cb) => {
