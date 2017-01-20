@@ -5,9 +5,11 @@ const bodyParser = require('body-parser')
 const app = express()
 const morgan = require('morgan')
 const populateDB = require('./app/utils/populate-db')
+const compression = require('compression')
 global.appState = {}
 
 app.use(morgan('dev'))
+app.use(compression())
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
