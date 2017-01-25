@@ -54,8 +54,10 @@ router.get('/', (req, res) => res.json({ message: 'Welcome to our api!' }))
 router.use(mongooseConnect)
 
 // CUSTOM ROUTES
-router = require('./user.js')(router)
+router = require('./user.js')(router, JWTAuth)
 router = require('./populate.js')(router, JWTAuth)
+router = require('./avaliacao.js')(router, JWTAuth)
+
 
 // DEFAULT ROUTES
 const Models = require('require-dir')('../models/default')

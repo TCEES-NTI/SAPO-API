@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken')
 const config = require('../../keys')
 const EXPIRESIN = '4h'
 
-module.exports = (router) => {
+module.exports = (router, JWTAuth) => {
   router.route('/singup')
     .post((req, res, next) => {
       let instance = new User()
@@ -50,5 +50,25 @@ module.exports = (router) => {
           next()
         })
     })
+    
+   router.route('/username')
+    .get(JWTAuth, (req, res, next) => {
+      return User.find()
+        .then(response => {
+          res.json(response.map((user) => {
+            return {
+              _id: user._id,
+              username: user.username,
+              name: user.name
+            }
+          }))
+          next()
+        })
+        .catch(error => {
+          res.status(error.statusCode || 500).send(error.message)
+          next()
+        })
+    })
+    
   return router
 }

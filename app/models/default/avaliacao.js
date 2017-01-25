@@ -29,8 +29,14 @@ let AvaliacaoSchema = new Schema({
   },
   idHistorico: {
     type: Number
-  }
+  },
+  usuarios: [{
+    type: Schema.ObjectId,
+    ref: 'User'
+  }],
 })
+
+AvaliacaoSchema.path('usuarios').set(splitArray)
 
 AvaliacaoSchema.pre('validate', function (next) {
   return Indicador.findOne({idHistorico: this.indicadorHistorico})
