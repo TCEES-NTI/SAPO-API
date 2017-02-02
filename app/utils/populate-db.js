@@ -10,6 +10,7 @@ const Data = {
   'entidade': require('../../data/entidade.csv'),
   'indicador': require('../../data/indicador.csv'),
   'item': require('../../data/item.csv'),
+  'item-has-criterio-legal': require('../../data/item_has_criteriolegal.csv'),
   'maturidade': require('../../data/maturidade.csv'),
   'nivel-maturidade': require('../../data/nivel-maturidade.csv'),
   'nivel': require('../../data/nivel.csv'),
@@ -56,6 +57,10 @@ const creationAttributes = {
     notaMaxima: 4,
     obrigatorio: 5,
     idHistorico: 0
+  },
+  'item-has-criterio-legal': {
+    itemId: 0,
+    criteriolegalId: 1
   },
   'maturidade': {
     nome: 1,

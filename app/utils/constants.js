@@ -7,6 +7,7 @@ module.exports = {
   },
   USER_ROLE: {
     VIEW: 'view',
+    DEFAULT: 'default',
     ADMIN: 'admin'
   } 
 }

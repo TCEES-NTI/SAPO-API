@@ -110,6 +110,7 @@ Object.keys(Models).forEach(modelKey => {
     .put(JWTAuth, (req, res, next) => {
       return Model.findById(req.params.id)
         .then(response => {
+          console.log(response)
           Object.keys(req.body)
             .filter(attribute => modelAttributes.indexOf(attribute) !== -1)
             .forEach(attribute => {
@@ -122,6 +123,7 @@ Object.keys(Models).forEach(modelKey => {
           next()
         })
         .catch(error => {
+          console.log(error)
           res.status(error.statusCode || 403).send(error.message)
           next()
         })
