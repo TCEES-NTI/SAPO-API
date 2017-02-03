@@ -59,8 +59,9 @@ const creationAttributes = {
     idHistorico: 0
   },
   'item-has-criterio-legal': {
-    itemId: 0,
-    criteriolegalId: 1
+    itemHistorico: 0,
+    criterioLegalHistorico: 1,
+    idHistorico: 0
   },
   'maturidade': {
     nome: 1,
@@ -180,6 +181,10 @@ module.exports = function () {
     //   modelNames = ['nota']
     //   return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
     // })
+    .then((res) => {
+      modelNames = ['item-has-criterio-legal']
+      return Promise.all( modelNames.map(modelName => populateModel(modelName)) )
+    })
     .then((res) => {
       console.log('Done populating database')
       mongoose.disconnect()

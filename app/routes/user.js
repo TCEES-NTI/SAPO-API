@@ -46,7 +46,7 @@ module.exports = (router, JWTAuth) => {
           })
         })
         .catch((err) => {
-          res.status(403).send(err.message)
+          res.status(403).send({error: err.message})
           next()
         })
     })

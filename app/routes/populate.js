@@ -105,21 +105,65 @@ module.exports = (router, JWTAuth) => {
       
     })
   router.route(URL + '/avaliacao/:avaliacaoId/objetoAvaliacao')
-    .get(JWTAuth, (req, res, next) => {
-        return ObjetoAvaliacao.find({ avaliacao: req.params.avaliacaoId })
-        .populate({
-          path: 'entidade',
-          model: 'Entidade'
-        })
-        .then(response => {
-          res.json(response)
-          next()
-        })
-        .catch(error => {
-          res.status(error.statusCode || 500).send(error.message)
-          next()
-        })
-      
+    .get(JWTAuth, cache(60), (req, res, next) => {
+      if (req.responseReady) {
+        res.send(req.responseReady)
+        next()
+      } else {
+        let objetosAvaliacao = []
+          return ObjetoAvaliacao.find({ avaliacao: req.params.avaliacaoId })
+          .populate({
+            path: 'entidade',
+            model: 'Entidade'
+          })
+          .then(response => {
+            objetosAvaliacao = response
+            return Promise.all(objetosAvaliacao.map((objetoAvaliacao) => {
+              return Nota.find({ objetoAvaliacao: objetoAvaliacao._id })
+                .populate({
+                  path:'pontuacao',
+                  model: 'Pontuacao'
+                })
+                .populate({
+                  path:'item',
+                  model: 'Item'
+                })
+            }))
+          })
+          .then(response => {
+            let allNotas = response
+            allNotas.forEach((notas) => {
+              let completude = notas.reduce((result, nota) => {
+                result.complete = nota.pontuacao ? result.complete + 1 : result.complete
+                result.total = result.total + 1
+                result.availableResult = result.availableResult + nota.item.notaMaxima
+                if (nota.pontuacao && nota.item) {
+                  result.result = result.result + (nota.pontuacao.nota * nota.item.notaMaxima)                
+                }
+                return result
+              }, {complete: 0, total: 0, result: 0, availableResult: 0})
+              completude.objetoAvaliacao = notas[0].objetoAvaliacao
+              objetosAvaliacao = objetosAvaliacao.map(objetoAvaliacao => {
+                if (objetoAvaliacao._id.toString() === completude.objetoAvaliacao.toString()) {
+                  objetoAvaliacao = objetoAvaliacao.toObject()
+                  objetoAvaliacao.completude = parseFloat((completude.complete / completude.total) * 100).toFixed(2)
+                  objetoAvaliacao.resultado = completude.result
+                  objetoAvaliacao.notaMaxima = completude.availableResult
+                }
+                return objetoAvaliacao
+              })  
+            })
+            return objetosAvaliacao
+          })
+          .then(response => {
+            res.json(response)
+            next()
+          })
+          .catch(error => {
+            res.status(error.statusCode || 500).send(error.message)
+            next()
+          })
+      }
     })
   router.route(URL + '/objetoAvaliacao/:objetoAvaliacaoId/nota')
     .get(JWTAuth, (req, res, next) => {

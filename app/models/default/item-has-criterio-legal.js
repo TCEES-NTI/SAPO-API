@@ -21,6 +21,9 @@ let ItemHasCriterioLegalSchema = new Schema({
   },
   criterioLegalHistorico: {
     type: Number
+  },
+  idHistorico: {
+    type: Number
   }
 })
 
