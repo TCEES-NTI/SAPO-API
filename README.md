@@ -1,5 +1,7 @@
 # S.A.P.O
 
+Sistema de auditoria de Portais.
+
 ## Instalação
 
 Configurações:
@@ -38,6 +40,7 @@ problema do plano gratuito ter o código aberto apenas adicionando /_src ao fina
 vantagens a alta escalabilidade e o baixo custo para manutenção da mesma.
 
 Observações:
+
 1- É necessário ter uma conta na AWS ativa. (É seguro.. eu garanto!)
 
 2- A função responsável pela nossa API deve ter:
