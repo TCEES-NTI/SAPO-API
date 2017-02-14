@@ -1,0 +1,62 @@
+{
+  "name": "aws-serverless-express",
+  "version": "1.3.0",
+  "description": "This library enables you to utilize AWS Lambda and Amazon API Gateway to respond to web and API requests using your existing Node.js application framework.",
+  "keywords": [
+    "aws",
+    "serverless",
+    "api",
+    "gateway",
+    "lambda",
+    "express"
+  ],
+  "homepage": "https://github.com/awslabs/aws-serverless-express",
+  "bugs": {
+    "url": "https://github.com/awslabs/aws-serverless-express/issues"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "index.js",
+    "middleware.js"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awslabs/aws-serverless-express.git"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "jest": "^16.0.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "gitHead": "c1bb8d2bf17f2c9902e99d210d030a00ad285b23",
+  "_id": "aws-serverless-express@1.3.0",
+  "_shasum": "b7b52a30a5bccc7c77c8d24f2ccdbf948a138c6d",
+  "_from": "aws-serverless-express@>=1.2.0 <2.0.0",
+  "_npmVersion": "3.6.0",
+  "_nodeVersion": "5.6.0",
+  "_npmUser": {
+    "name": "brettstack",
+    "email": "brett.j.andrews@gmail.com"
+  },
+  "dist": {
+    "shasum": "b7b52a30a5bccc7c77c8d24f2ccdbf948a138c6d",
+    "tarball": "https://registry.npmjs.org/aws-serverless-express/-/aws-serverless-express-1.3.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "brettstack",
+      "email": "brett.j.andrews@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/aws-serverless-express-1.3.0.tgz_1485280882922_0.7727212074678391"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/aws-serverless-express/-/aws-serverless-express-1.3.0.tgz"
+}

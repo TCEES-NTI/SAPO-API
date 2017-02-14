@@ -37,10 +37,11 @@ module.exports = (router, JWTAuth) => {
             if (err || !isMatch) {
               res.status(403).send('Wrong password for the provided user.')
             }
+            let token = jwt.sign(user, config.SECRET, { expiresIn: EXPIRESIN })
             res.json({
               success: true,
               message: 'Enjoy your token!',
-              token: jwt.sign(user, config.SECRET, { expiresIn: EXPIRESIN })
+              token: token
             })
             next()
           })

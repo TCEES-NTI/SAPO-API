@@ -1,10 +1,10 @@
 {
   "lambda": {
-    "role": "estudos-estrategicos-executor",
-    "name": "estudos-estrategicos",
+    "role": "SAPO-executor",
+    "name": "SAPO",
     "region": "us-east-1"
   },
   "api": {
-    "id": "8zs8jls20g"
+    "id": "2d3n35t39a"
   }
 }
