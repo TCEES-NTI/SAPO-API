@@ -9,7 +9,7 @@ const Indicador = require('./indicador.js')
 let PilarSchema = new Schema({
   indicador: {
     type: Schema.ObjectId,
-    ref: 'Entidade'
+    ref: 'Indicador'
   },
   indicadorHistorico: {
     type: Number

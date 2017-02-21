@@ -2,6 +2,11 @@
 
 const Item = require('../models/default/item')
 const SubNivel = require('../models/default/subnivel')
+const Nivel = require('../models/default/nivel')
+const Tipo = require('../models/default/tipo')
+const Pilar = require('../models/default/pilar')
+const Indicador = require('../models/default/indicador')
+const CriterioLegal = require('../models/default/criterio-legal')
 const Avaliacao = require('../models/default/avaliacao')
 const ObjetoAvaliacao = require('../models/default/objeto-avaliacao')
 const Nota = require('../models/default/nota')
@@ -213,5 +218,119 @@ module.exports = (router, JWTAuth) => {
       
     })
 
+  router.route(URL + '/parent/criterioLegal')
+    .get(JWTAuth, (req, res, next) => {
+        return CriterioLegal.find()
+        .populate({
+          path: 'norma',
+          model: 'Norma'
+        })
+        .then(response => {
+          res.json(response)
+          next()
+        })
+        .catch(error => {
+          res.status(error.statusCode || 500).send(error.message)
+          next()
+        })
+    })
+  router.route(URL + '/parent/item')
+    .get(JWTAuth, (req, res, next) => {
+        return Item.find()
+        .populate({
+          path: 'subnivel',
+          model: 'Subnivel'
+        })
+        .then(response => {
+          res.json(response)
+          next()
+        })
+        .catch(error => {
+          res.status(error.statusCode || 500).send(error.message)
+          next()
+        })
+    })
+  router.route(URL + '/parent/subnivel')
+    .get(JWTAuth, (req, res, next) => {
+        return SubNivel.find()
+        .populate({
+          path: 'nivel',
+          model: 'Nivel'
+        })
+        .then(response => {
+          res.json(response)
+          next()
+        })
+        .catch(error => {
+          res.status(error.statusCode || 500).send(error.message)
+          next()
+        })
+    })
+  router.route(URL + '/parent/nivel')
+    .get(JWTAuth, (req, res, next) => {
+        return Nivel.find()
+        .populate({
+          path: 'tipo',
+          model: 'Tipo'
+        })
+        .then(response => {
+          res.json(response)
+          next()
+        })
+        .catch(error => {
+          res.status(error.statusCode || 500).send(error.message)
+          next()
+        })
+    })
+  router.route(URL + '/parent/tipo')
+    .get(JWTAuth, (req, res, next) => {
+        return Tipo.find()
+        .populate({
+          path: 'pilar',
+          model: 'Pilar'
+        })
+        .then(response => {
+          res.json(response)
+          next()
+        })
+        .catch(error => {
+          res.status(error.statusCode || 500).send(error.message)
+          next()
+        })
+    })
+  router.route(URL + '/parent/pilar')
+    .get(JWTAuth, (req, res, next) => {
+        return Pilar.find()
+        .populate({
+          path: 'indicador',
+          model: 'Indicador'
+        })
+        .then(response => {
+          res.json(response)
+          next()
+        })
+        .catch(error => {
+          res.status(error.statusCode || 500).send(error.message)
+          next()
+        })
+    })
+  router.route(URL + '/parent/pontuacao')
+    .get(JWTAuth, (req, res, next) => {
+        return Pontuacao.find()
+        .populate({
+          path: 'item',
+          model: 'Item'
+        })
+        .then(response => {
+          res.json(response)
+          next()
+        })
+        .catch(error => {
+          res.status(error.statusCode || 500).send(error.message)
+          next()
+        })
+    })
+    
+    
   return router
 }
