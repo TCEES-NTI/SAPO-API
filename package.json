@@ -20,6 +20,7 @@
     "bluebird": "^3.4.6",
     "body-parser": "~1.0.1",
     "compression": "^1.6.2",
+    "csvjson": "^4.1.2",
     "express": "~4.0.0",
     "jsonwebtoken": "^7.1.9",
     "lodash": "^4.17.2",
